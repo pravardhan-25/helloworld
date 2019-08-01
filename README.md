@@ -1,4 +1,4 @@
-Steps to convert existing Angular project into Single-Spa 
+# Steps to convert existing Angular project into Single-Spa 
 
 1.	Install the following packages to the existing app 
     npm install --save single-spa-angular
@@ -26,8 +26,8 @@ export const unmount = lifecycles.unmount;
 ```
 
 3.	To build, edit scripts in the package.json
--	Replace <pre> "build": "ng build --prod"</pre> with <pre>webpack</pre>
--	Replace <pre>"start": "ng serve --aot --proxy-config proxy.conf.js -o",</pre> with <prev>"start:dev": "webpack-dev-server --open"</pre>
+-	Replace ` "build": "ng build --prod" ` with  `webpack`
+-	Replace <pre>"start": "ng serve --aot --proxy-config proxy.conf.js -o",</pre> with <prev>"start:dev": "webpack-dev-server --open"
 -	Replace <pre>"serve:sw": "npm run build -s && npx http-server ./dist_web -p 4200"<pre> with <pre> "serve:sw": "npm run build -s && npx http-server ./dist_web -p 4200"</pre>
 
 4.	Create webpack.config.js file under the root directory of the project.
