@@ -27,8 +27,8 @@ export const unmount = lifecycles.unmount;
 
 3.	To build, edit scripts in the package.json
 -	Replace ` "build": "ng build --prod" ` with  `webpack`
--	Replace <pre>"start": "ng serve --aot --proxy-config proxy.conf.js -o",</pre> with <prev>"start:dev": "webpack-dev-server --open"
--	Replace <pre>"serve:sw": "npm run build -s && npx http-server ./dist_web -p 4200"<pre> with <pre> "serve:sw": "npm run build -s && npx http-server ./dist_web -p 4200"</pre>
+-	Replace ` "start": "ng serve --aot --proxy-config proxy.conf.js -o" ` with ` "start:dev": "webpack-dev-server --open" `
+-	Replace ` "serve:sw": "npm run build -s && npx http-server ./dist_web -p 4200" ` with ` "serve:sw": "npm run build -s && npx http-server ./dist_web -p 4200" `
 
 4.	Create webpack.config.js file under the root directory of the project.
 Sample webpack.config file 
